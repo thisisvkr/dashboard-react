@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.App {
+  background: #f0f0f0;
+  display: grid;
+  grid-template-columns: 15.5rem auto;
+  height: 100%;
+  gap: 50px;
+  padding-right: 50px;
+  font-family: 'Inter', sans-serif;
+}
+
+.bars {
+  display: none;
+}
+
+a:-webkit-any-link {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+/* ********** Responsiveness ********** */
+@media screen and (max-width: 1250px) {
+  .App {
+    grid-template-columns: 20% auto;
+    overflow-y: hidden;
+    gap: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .App {
+    grid-template-columns: 15rem auto;
+  }
+}
+
+/* ********** Mobile Responsiveness ********** */
+@media screen and (max-width: 768px) {
+  .App {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .App::-webkit-scrollbar {
+    display: none;
+  }
+}

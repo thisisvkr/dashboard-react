@@ -1,0 +1,23 @@
+.overview-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 10px 0 10px;
+  overflow-x: auto;
+}
+.overview-header {
+  display: flex;
+  justify-content: space-between;
+}
+.overview-header select {
+  outline: none;
+  border: none;
+  background: #f5f5f9;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.earning-subtitle {
+  font-size: 14px;
+  color: #a6a6a6;
+  font-weight: 500;
+}
