@@ -3,20 +3,25 @@ import NavBar from './NavBar';
 import Overview from './Overview';
 import SearchBox from './SearchBox';
 import './Dashboard.css';
+import Customers from './Customers';
+import ProductSell from './ProductSell';
 
 function Dashboard() {
   return (
     <div className='dashboard'>
-      <header>
+      <header className='header'>
         <NavBar />
         <SearchBox />
       </header>
       <main>
         <CardList />
-        <section className='middle'>
+        <section className='hero-section'>
           <Overview />
+          <Customers />
         </section>
-        <section className='bottom'></section>
+        <section className='footer-section'>
+          <ProductSell />
+        </section>
       </main>
     </div>
   );

@@ -13,34 +13,24 @@
   display: flex;
   justify-content: space-between;
 }
-/* 
-import Cards from '../cards/Cards';
-import './MainDash.css';
-import { BsSearch } from 'react-icons/bs';
-import Overview from './../overview/Overview';
-import Customers from './../customers/Customers';
-import ProductSell from '../productSell/ProductSell';
 
-const MainDash = () => {
-  return (
-    <div className="mainDash">
-      <header>
-        <div className="left">Hello Shahrukh 👋,</div>
-        <div className="right">
-          <BsSearch />
-          <input type="text" placeholder="Search" />
-        </div>
-      </header>
-      <Cards />
-      <section className="middle">
-        <Overview />
-        <Customers />
-      </section>
-      <section className="bottom">
-        <ProductSell />
-      </section>
-    </div>
-  );
-};
+.dashboard .hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+}
 
-export default MainDash; */
+@media screen and (max-width: 1505px) {
+  .dashboard.middle {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -11,7 +11,7 @@ function CardList() {
           title={data.heading}
           Icon={data.icon}
           amount={data.amount}
-          percentage={data.percentage}
+          growthPercentage={data.growthPercentage}
           period={data.period}
           background={data.bgColor}
           color={data.txtColor}
