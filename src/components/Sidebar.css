@@ -4,6 +4,7 @@
   display: flex;
   align-items: start;
   flex-direction: column;
+  position: relative;
 
   gap: 30px;
 }
@@ -95,4 +96,12 @@
 .user .userInfo .userDesignation {
   color: #dadada;
   font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .user {
+    bottom: 0px;
+
+    /* background-color: rgba(255, 255, 255, 0.3); */
+  }
 }
